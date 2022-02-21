@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700');
+
+/* Body CSS */
+body{
+    margin : 0%;
+    position: relative;
+}
+
+body::before{
+    content: '';
+    background-image: url(/My_Website/Resources/BG.jpg);
+    opacity: 0.3;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment:fixed;
+}
+
+/* Navbar CSS */
+
+.navbar{
+    font-family: 'Heebo', sans-serif;
+    z-index: 1;
+    width: 100%;
+    top: 0%;   
+    display: flex;
+    left: 0%;
+    right: 0%;
+    position: sticky;
+    background-color: rgb(230, 230, 230);
+    justify-content: center;
+    box-shadow: 0vmin 5px 8px #888888;
+    margin-bottom: 8px;
+}
+
+.navbar ul{
+    display: flex;
+    width: 100%;    
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li{
+    margin-left: 1vw;
+    margin-right: 1vw;
+    display: inline-block;
+}
+
+.navbar ul li a{
+    position: relative;
+    display: flex;
+    color: rgb(219, 43, 43);
+    text-decoration: none;
+    cursor: pointer;
+    align-items: center;
+}
+
+.navbar ul li:hover{
+    opacity: 0.5;
+    background-color: #dadada;
+    border-radius: 5px;
+}
+
+.navbar ul li a:hover{
+    color: rgb(46, 0, 0);
+    text-decoration: underline;
+}
+
+.navbar .current{
+    text-decoration: underline;
+    color:rgb(46, 0, 0);
+}
+
+.navbar .icon{
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-left: 15%;
+    height: 3vw;
+    width: 3vw;
+}
+
+.navbar .li_text{
+    display: inline;
+    margin: 0;
+    padding: 0;
+    padding-inline: 5px;
+    font-size: 1.5vw;
+}
+
+.navbar .page_icon{
+    height: 2vw;
+    width: 2vw;
+}
+
+.navbar .web_icon{
+    position: relative;
+}
+
+.navbar .web_icon:hover{
+    opacity: 0.7;
+}
+
+/* Content CSS */
+
